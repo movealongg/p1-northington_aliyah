@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import 'nav.scss';
+
+/*variables*/
+$fjalla-font: 'Fjalla One', sans-serif;
+$primary-color: #000;
+$secondary-color: #fff;
+$default-font-size: 16px;
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+	display:block;
+}
+
+body{
+	font-family: $fjalla-font;
+	color: $primary-color;
+	font-size: $default-font-size;
+}
+
+.logo{
+	width: 100%;
+	max-width: 180px;
+	padding-top: 8px;
+	}
