@@ -72,7 +72,7 @@ nav {
     display: block; }
   nav {
     width: 100%;
-    padding: 70px 0 15px; }
+    padding: 70px 0 0.1px; }
     nav ul {
       display: none; }
       nav ul li {
@@ -129,6 +129,7 @@ article {
   padding: 10px; }
 
 /*variables*/
+/*mixins*/
 * {
   margin: 0;
   padding: 0;
@@ -140,9 +141,39 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 body {
   font-family: "Fjalla One", sans-serif;
   color: #000;
-  font-size: 16px; }
+  font-size: 16px;
+  background-image: url(images/paper-bg.png);
+  background-repeat: repeat;
+  background-size: contain;
+  text-transform: uppercase;
+  overflow-x: hidden; }
 
 .logo {
   width: 100%;
   max-width: 180px;
   padding-top: 8px; }
+
+.hero {
+  background-image: url(images/hero-img-pizza.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  height: 50vh;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 50px 10px 0; }
+  .hero a {
+    padding: 8px;
+    margin: 15px 0;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    display: flex; }
+    .hero a img {
+      width: 100%;
+      max-width: 18px;
+      align-self: center;
+      padding: 0 0 0 5px; }

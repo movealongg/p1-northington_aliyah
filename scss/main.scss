@@ -7,6 +7,15 @@ $primary-color: #000;
 $secondary-color: #fff;
 $default-font-size: 16px;
 
+/*mixins*/
+
+@mixin buttons{
+		padding: 8px;
+		margin: 15px 0;
+		background-color: $primary-color;
+		color: $secondary-color;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -21,6 +30,11 @@ body{
 	font-family: $fjalla-font;
 	color: $primary-color;
 	font-size: $default-font-size;
+	background-image: url(images/paper-bg.png);
+	background-repeat: repeat;
+	background-size: contain;
+	text-transform: uppercase;
+	overflow-x: hidden;
 }
 
 .logo{
@@ -28,3 +42,31 @@ body{
 	max-width: 180px;
 	padding-top: 8px;
 	}
+
+.hero{
+	background-image: url(images/hero-img-pizza.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	display: flex;
+	height: 50vh;
+	align-items: flex-start;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 50px 10px 0;
+	
+	a{
+		@include buttons;
+		text-decoration: none;
+		display: flex;
+		
+		img{
+			width: 100%;
+			max-width: 18px;
+			align-self: center;
+			padding: 0 0 0 5px;
+		}
+	}
+	
+}
