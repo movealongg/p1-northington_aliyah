@@ -5,20 +5,20 @@
   background: #000; }
 
 .brand {
-  position: absolute;
-  padding-left: 10px;
-  float: left;
   line-height: 70px;
+  display: flex;
   text-transform: uppercase;
-  font-size: 1.4em; }
+  font-size: 1.4em;
+  padding-left: 40px; }
   .brand a,
   .brand a:visited {
     color: #ffffff;
     text-decoration: none; }
 
 .nav-container {
-  max-width: 1000px;
-  margin: 0 auto; }
+  display: flex;
+  width: 100%;
+  justify-content: space-between; }
 
 nav {
   float: right; }
@@ -82,7 +82,7 @@ nav {
           padding: 15px;
           line-height: 20px; }
         nav ul li ul li a {
-          padding-left: 30px; }
+          padding-left: 40px; }
   .nav-dropdown {
     position: static; } }
 
@@ -138,6 +138,14 @@ article {
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
   display: block; }
 
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+.site-content {
+  flex: 1; }
+
 body {
   font-family: "Fjalla One", sans-serif;
   color: #000;
@@ -149,9 +157,8 @@ body {
   overflow-x: hidden; }
 
 .logo {
-  width: 100%;
-  max-width: 180px;
-  padding-top: 8px; }
+  width: 180px;
+  padding-top: 6px; }
 
 .hero {
   background-image: url(images/hero-img-pizza.jpg);

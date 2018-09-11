@@ -26,6 +26,16 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 	display:block;
 }
 
+.site{
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.site-content{
+	flex: 1;
+}
+
 body{
 	font-family: $fjalla-font;
 	color: $primary-color;
@@ -38,9 +48,9 @@ body{
 }
 
 .logo{
-	width: 100%;
-	max-width: 180px;
-	padding-top: 8px;
+//	width: 100%;
+	width: 180px;
+	padding-top: 6px;
 }
 
 .hero{
