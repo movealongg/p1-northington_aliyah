@@ -68,6 +68,7 @@ body{
 	.hero-text{
 		background-color: $secondary-color;
 		padding: 5px;
+		font-size: 1rem;
 	}
 	
 	a{
@@ -95,6 +96,7 @@ body{
 	flex-wrap: wrap;
 	justify-content: center;
 	padding: 30px;
+	align-items: center;
 	
 	img{
 		width: 100%;
@@ -171,6 +173,14 @@ footer{
 
 /*media queries*/
 @media (min-width: 650px){
+	.hero{
+		padding: 40px;
+		
+		.hero-text{
+			font-size: 1.3rem;
+		}
+	}
+	
 	footer{
 		flex-direction: row;
 		justify-content: space-between;
@@ -188,11 +198,28 @@ footer{
 	.image-grid{
 		flex-wrap: nowrap;
 	}
-
 }
 
 @media (max-width: 798px){
 	.hero{
 		padding: 20px 10px;
+	}
+}
+
+@media (min-width: 1000px){
+	.hero .hero-text{
+		font-size: 1.5rem;
+	}
+}
+
+@media (min-width: 1600px){
+	.hero .hero-text{
+		font-size: 1.7rem;
+	}
+}
+
+@media (min-width: 1900px){
+	.hero .hero-text{
+		font-size: 1.9rem;
 	}
 }
