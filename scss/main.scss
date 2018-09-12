@@ -64,7 +64,12 @@ body{
 	align-items: flex-start;
 	flex-direction: column;
 	justify-content: flex-start;
-	padding: 50px 10px 0;
+	padding: 20px 40px;
+	
+	.hero-text{
+		background-color: $secondary-color;
+		padding: 5px;
+	}
 	
 	a{
 		@include buttons;
@@ -84,10 +89,9 @@ body{
 .image-grid{
 	display: flex;
 	flex-wrap: wrap;
-	max-width: 1000px;
-	margin: auto;
 	justify-content: center;
 	padding: 30px;
+	
 	
 	img{
 		width: 100%;
@@ -100,6 +104,7 @@ body{
 	
 	figure{
 		position: relative;
+		padding: 5px;
 	}
 	
 	figcaption{
@@ -113,10 +118,10 @@ body{
 		justify-content: center;
 		color: $secondary-color;
 		text-align: center;
-		font-size: 2rem;
+		font-size: 1.8rem;
 		
 		::first-line {
-			font-size: 1.75rem;
+			font-size: 1.55rem;
 		}
 	}
 }
@@ -140,8 +145,12 @@ footer{
 		flex-direction: column;
 		
 		.social-icons{
-			align-self: center;
 			padding: 5px 0 0;
+			align-self: center;
+			
+			img{
+				padding: 0 2px;
+			}
 		}
 	}
 
@@ -165,5 +174,17 @@ footer{
 		}
 		
 	}
-	
+}
+
+@media (min-width: 700px){
+	.image-grid{
+		flex-wrap: nowrap;
+	}
+
+}
+
+@media (max-width: 798px){
+	.hero{
+		padding: 20px 10px;
+	}
 }
