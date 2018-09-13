@@ -149,10 +149,12 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 .site-content {
   flex: 1; }
 
-body {
+html {
   font-family: "Fjalla One", sans-serif;
   color: #000;
-  font-size: 16px;
+  font-size: 16px; }
+
+body {
   background-image: url(images/paper-bg.png);
   background-repeat: repeat;
   background-size: contain;
@@ -174,11 +176,27 @@ body {
   align-items: flex-start;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 20px 40px; }
+  padding: 20px 10px;
+  box-sizing: border-box; }
+  @media (min-width: 798px) {
+    .hero {
+      padding: 20px 40px; } }
   .hero .hero-text {
     background-color: #fff;
     padding: 5px;
     font-size: 1rem; }
+    @media (min-width: 650px) {
+      .hero .hero-text {
+        font-size: 1.3rem; } }
+    @media (min-width: 1000px) {
+      .hero .hero-text {
+        font-size: 1.5rem; } }
+    @media (min-width: 1600px) {
+      .hero .hero-text {
+        font-size: 1.7rem; } }
+    @media (min-width: 1900px) {
+      .hero .hero-text {
+        font-size: 1.9rem; } }
   .hero a {
     padding: 8px;
     margin: 15px 0;
@@ -201,6 +219,10 @@ body {
   justify-content: center;
   padding: 30px;
   align-items: center; }
+  @media (min-width: 700px) {
+    .image-grid {
+      flex-wrap: nowrap;
+      height: 270px; } }
   .image-grid img {
     width: 100%;
     max-width: 300px;
@@ -212,7 +234,7 @@ body {
     position: relative;
     padding: 5px; }
     .image-grid figure :hover {
-      transform: scale(1.25); }
+      transform: scale(1.2); }
   .image-grid figcaption {
     position: absolute;
     top: 0;
@@ -237,11 +259,20 @@ footer {
   line-height: 1.5rem;
   flex-direction: column;
   align-items: center; }
+  @media (min-width: 650px) {
+    footer {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 5px 40px; } }
   footer p {
     padding: 0 20px; }
   footer .contact-footer {
     display: flex;
     flex-direction: column; }
+    @media (min-width: 650px) {
+      footer .contact-footer {
+        flex-direction: row;
+        align-items: center; } }
     footer .contact-footer .social-icons {
       padding: 5px 0 0;
       align-self: center; }
@@ -252,37 +283,3 @@ footer {
 
 .social-icons img:hover {
   opacity: 0.5; }
-
-/*media queries*/
-@media (min-width: 650px) {
-  .hero {
-    padding: 40px; }
-    .hero .hero-text {
-      font-size: 1.3rem; }
-  footer {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 5px 40px; }
-    footer .contact-footer {
-      flex-direction: row;
-      align-items: center; } }
-
-@media (min-width: 700px) {
-  .image-grid {
-    flex-wrap: nowrap; } }
-
-@media (max-width: 798px) {
-  .hero {
-    padding: 20px 10px; } }
-
-@media (min-width: 1000px) {
-  .hero .hero-text {
-    font-size: 1.5rem; } }
-
-@media (min-width: 1600px) {
-  .hero .hero-text {
-    font-size: 1.7rem; } }
-
-@media (min-width: 1900px) {
-  .hero .hero-text {
-    font-size: 1.9rem; } }
